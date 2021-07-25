@@ -8,7 +8,6 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('', views.index, name='index'),
     path('authors/', views.AuthorListView.as_view(), name='authors'),
     path('author/<int:pk>', views.AuthorDetailView.as_view(), name='author-detail'),
 ]
